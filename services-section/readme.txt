@@ -2,9 +2,9 @@
 Contributors: bplugins, abuhayat, charlescormier
 Donate link: https://www.buymeacoffee.com/abuhayat
 Tags: block, our service, services section, services template, service card
-Requires at least: 6.2+
-Tested up to: 6.6.2
-Stable tag: 1.3.3
+Requires at least: 6.5+
+Tested up to: 6.7.1
+Stable tag: 1.3.4
 Requires PHP: 7.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -53,7 +53,7 @@ It is very effective in presenting your services nicely. There are many options 
 
 🔥 **[PDF Poster](https://bplugins.com/products/pdf-poster)** – A fully-featured PDF Viewer Plugin for WordPress.
 
-🔥 **[Document Embedder](https://bplugins.com/products/document-embedder)** – Best WordPress Document Embeder Plugin.
+🔥 **[Document Embedder](https://bplugins.com/products/document-embedder)** – Best WordPress Document Embedder Plugin.
 
 🔥 **[3D Viewer](https://bplugins.com/products/3d-viewer)** – Display interactive 3D models on the webs.
 
@@ -112,71 +112,8 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 
 == Changelog ==
 
-= 1.3.3 =
-* Update font library
-
-= 1.3.2 =
-* Fix empty link
-
-= 1.3.1 =
-* Reduce assets load
-
-= 1.3.0 =
-* Remove the link if no link
-
-= 1.2.9 =
-* Add translate feature
-
-= 1.2.8 =
-* Fix HTML Render
-
-= 1.2.7 =
-* Reduce PHP Code
-* Performance Improvement
-
-= 1.2.6 =
-* Fix the default icon issue.
-
-= 1.2.5 =
-* Reduce PHP Code
-
-= 1.2.4 =
-* Performance upgrade
-
-= 1.2.3 =
-* Performance upgrade
-
-= 1.2.2 =
-* Update theme and link position settings in the global
-
-= 1.2.1 =
-* Add an option for the link in the whole service element
-
-= 1.2.0 =
-* Add options for hover background
-* Fix the upload icon
-
-= 1.1.4 =
-* Fix align issues
-
-= 1.1.3 =
-* Fix issues
-
-= 1.1.2 =
-* Add Templates
-* Add more settings
-
-= 1.1.1 =
-* Fix align class
-
-= 1.1 =
-* Add Icon Upload Option
-
-= 1.0 =
-* Initial Release
-
-
-== Upgrade Notice ==
+= 1.3.4 - 28 Dec 24 =
+* Fix default image not found issue.
 
 = 1.3.3 =
 * Update font library

@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Services Section - Block
  * Description: Use Services Section Block to provide services of your business to clients with customizable settings.
- * Version: 1.3.4
+ * Version: 1.3.5
  * Author: bPlugins
  * Author URI: https://bplugins.com
  * License: GPLv3
@@ -14,7 +14,7 @@
 if ( !defined( 'ABSPATH' ) ) { exit; }
 
 // Constant
-define( 'SSB_VERSION', isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '1.3.4' );
+define( 'SSB_VERSION', isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '1.3.5' );
 define( 'SSB_DIR_URL', plugin_dir_url( __FILE__ ) );
 define( 'SSB_DIR_PATH', plugin_dir_path( __FILE__ ) );
 

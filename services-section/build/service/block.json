@@ -37,6 +37,43 @@
         "repeat": "no-repeat"
       }
     },
+    "afterBackground": {
+      "type": "object",
+      "default": {
+        "color": "#37473A"
+      }
+    },
+    "animationDirection": {
+      "type": "string",
+      "default": "left"
+    },
+    "contentBox": {
+      "type": "object",
+      "default": {
+        "bg": "#6A3434",
+        "padding": {
+          "side": 4,
+          "top": "0px",
+          "right": "20px",
+          "bottom": "20px",
+          "left": "20px"
+        },
+        "border": {
+          "side": "top",
+          "color": "#fa5b0f",
+          "width": "15px",
+          "style": "solid",
+          "radius": ""
+        }
+      }
+    },
+    "cardData": {
+      "type": "object",
+      "default": {
+        "bg": "#282828",
+        "radius": "10px"
+      }
+    },
     "isIcon": {
       "type": "boolean",
       "default": true
@@ -51,6 +88,18 @@
         "class": "fa-brands fa-wordpress",
         "fontSize": 70
       }
+    },
+    "iconHovColor": {
+      "type": "string",
+      "default": "#000"
+    },
+    "iconBgColor": {
+      "type": "string",
+      "default": "#0000"
+    },
+    "iconBgHovColor": {
+      "type": "string",
+      "default": "#0000"
     },
     "upIcon": {
       "type": "object",
@@ -82,6 +131,10 @@
       "type": "string",
       "default": "#222"
     },
+    "titleHovColor": {
+      "type": "string",
+      "default": "#222"
+    },
     "isDesc": {
       "type": "boolean",
       "default": true
@@ -95,6 +148,26 @@
       "type": "string",
       "default": "#333"
     },
+    "descHovColor": {
+      "type": "string",
+      "default": "#333"
+    },
+    "circleBefore": {
+      "type": "object",
+      "default": {
+        "width": "150px",
+        "height": "150px"
+      },
+      "bg": "#ff4500",
+      "opacity": 0.5,
+      "hovOpacity": 1,
+      "border": {
+        "color": "#504f93",
+        "width": "6px",
+        "style": "solid",
+        "radius": "50%"
+      }
+    },
     "isLink": {
       "type": "boolean",
       "default": true
@@ -106,6 +179,10 @@
     "linkIn": {
       "type": "string",
       "default": "button"
+    },
+    "isOpenInNewTab": {
+      "type": "boolean",
+      "default": false
     },
     "linkIconColor": {
       "type": "string",

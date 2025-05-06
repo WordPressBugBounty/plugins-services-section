@@ -45,6 +45,16 @@
         "color": "#0000"
       }
     },
+    "padding": {
+      "type": "object",
+      "default": {
+        "side": 4
+      }
+    },
+    "border": {
+      "type": "object",
+      "default": {}
+    },
     "textAlign": {
       "type": "string",
       "default": "left"
@@ -75,6 +85,24 @@
         "blur": "20px",
         "color": "#0000001a"
       }
+    },
+    "itemHovShadow": {
+      "type": "object",
+      "default": {
+        "hOffset": 0,
+        "vOffset": "12px",
+        "blur": "20px",
+        "spreed": "-7px",
+        "color": "rgba(0, 0, 0, 0.2)"
+      }
+    },
+    "showBorderDiv": {
+      "type": "boolean",
+      "default": true
+    },
+    "borderDivBg": {
+      "type": "string",
+      "default": "#21759b"
     },
     "iconPadding": {
       "type": "object",
@@ -135,7 +163,10 @@
       }
     }
   },
-  "editorScript": "file:./index.js",
+  "editorScript": [
+    "file:./index.js",
+    "wp-api"
+  ],
   "editorStyle": "file:./index.css",
   "style": [
     "file:./view.css",

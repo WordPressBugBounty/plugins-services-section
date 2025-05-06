@@ -1,10 +1,10 @@
-=== Services Section block - Showcase services in a professional way. ===
-Contributors: bplugins, abuhayat, charlescormier
+=== Services Section Block - Showcase services in a professional way. ===
+Contributors: bplugins, abuhayat, charlescormier,shamim10, freemius
 Donate link: https://www.buymeacoffee.com/abuhayat
 Tags: block, our service, services section, services template, service card
 Requires at least: 6.5+
 Tested up to: 6.7.2
-Stable tag: 1.3.5
+Stable tag: 1.3.6
 Requires PHP: 7.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -18,13 +18,28 @@ Professionally showcase your services. This plugin adds a new block in the Block
 It is very effective in presenting your services nicely. There are many options that you can use to decorate your service section using any color you like.
 
 
-**[Demos](https://bblockswp.com/demo/services-section/)**
+**[Demos](https://bblockswp.com/demo/services-section/)** | **[Get Pro](https://checkout.freemius.com/plugin/18628/plan/30791)**
 
 
 = Features =
-- Icon Library: There is an icon library from which you can select the icon of your choice, or if that icon is not available in the library, you can upload any images in PNG, JPEG, or JPG format and set it as a service icon.
-- Built-in Templates: We have added several templates that you can use whenever you want to present your services.
-- Customize elements: Apply custom typography to the title and description
+- **Icon Library**: There is an icon library from which you can select the icon of your choice, or if that icon is not available in the library, you can upload any images in PNG, JPEG, or JPG format and set it as a service icon.
+- **Built-in Templates**: We have added several templates that you can use whenever you want to present your services.
+- **Customize elements**: Apply custom typography to the title and description
+
+
+= Pro Features =
+- **Advanced Layout Variations**: Unlock exclusive layouts like Layout 2 to Layout 8 with unique styles and structures.
+- **Pro-Level Padding & Spacing Controls**: Set custom padding and spacing per side with more flexibility using Pro controls.
+- **Enhanced Border Customization**: Access full border controls including individual side styles and advanced radius options.
+- **Animation Direction Settings**: Enable directional animation control for layout-specific designs like Layout 4.
+- **Border Div Customization (Layout 8)**: Toggle and style an additional decorative border layer behind items.
+- **Advanced Shadow Effects**: Apply smooth box shadows and hover transitions for more modern aesthetics.
+- **Flexible Linking Options**: Enable links on items and choose where they apply — on button, title, or entire box.
+- **Open in New Tab**: Choose whether links open in a new browser tab.
+- **Opacity**: Control the transparency level of the circle background.
+- **Hover Opacity**: Set the transparency when hovering over the circle.
+- **Radius**: Control the corner roundness of the box.
+- **Border**: Customize the border style, width, and color.
 
 
 = How to use =
@@ -105,12 +120,21 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 
 1. Default Layout
 2. Layout 1
-3. Showcase Block
-4. Add Block
-5. All Settings
+3. Layout 2
+4. Layout 3
+5. Layout 4
+6. Layout 5
+7. Layout 6
+8. Layout 7
+9. Layout 8
+10. Add Block
+11. All Settings
 
 
 == Changelog ==
+
+= 1.3.6 - 6 May 25 =
+* Improve Admin dashboard demo page
 
 = 1.3.5 - 17 Feb 25 =
 * Improve security

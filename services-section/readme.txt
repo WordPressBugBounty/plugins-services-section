@@ -4,7 +4,7 @@ Donate link: https://www.buymeacoffee.com/abuhayat
 Tags: block, our service, services section, services template, service card
 Requires at least: 6.5+
 Tested up to: 6.7.2
-Stable tag: 1.3.6
+Stable tag: 1.3.7
 Requires PHP: 7.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -132,6 +132,9 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 
 
 == Changelog ==
+
+= 1.3.7 - 20 May 25 =
+* escapeHTML imported from common
 
 = 1.3.6 - 6 May 25 =
 * Improve Admin dashboard demo page

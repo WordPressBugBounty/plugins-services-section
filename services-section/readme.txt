@@ -3,7 +3,7 @@ Contributors: bplugins, abuhayat, charlescormier,shamim10, freemius
 Donate link: https://www.buymeacoffee.com/abuhayat
 Tags: block, our service, services section, services template, service card
 Requires at least: 6.5+
-Tested up to: 6.7.2
+Tested up to: 6.8.1
 Stable tag: 1.3.7
 Requires PHP: 7.1
 License: GPLv3 or later

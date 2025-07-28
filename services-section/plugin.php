@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Services Section - Block
  * Description: Use Services Section Block to provide services of your business to clients with customizable settings.
- * Version: 1.3.7
+ * Version: 1.3.8
  * Author: bPlugins
  * Author URI: https://bplugins.com
  * License: GPLv3
@@ -23,23 +23,18 @@ if ( function_exists( 'ss_fs' ) ) {
         }
     } );
 } else {
-    define( 'SSB_VERSION', ( isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '1.3.7' ) );
+    define( 'SSB_VERSION', ( isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '1.3.8' ) );
     define( 'SSB_DIR_URL', plugin_dir_url( __FILE__ ) );
     define( 'SSB_DIR_PATH', plugin_dir_path( __FILE__ ) );
-    define( 'SSB_HAS_FREE', 'services-section/plugin.php' === plugin_basename( __FILE__ ) );
-    define( 'SSB_HAS_PRO', 'services-section-pro/plugin.php' === plugin_basename( __FILE__ ) );
+    define( 'SSB_HAS_PRO', file_exists( dirname( __FILE__ ) . '/freemius/start.php' ) );
     if ( !function_exists( 'ss_fs' ) ) {
         function ss_fs() {
             global $ss_fs;
             if ( !isset( $ss_fs ) ) {
-                $fsStartPath = dirname( __FILE__ ) . '/freemius/start.php';
-                $bSDKInitPath = dirname( __FILE__ ) . '/bplugins_sdk/init.php';
-                if ( SSB_HAS_PRO && file_exists( $fsStartPath ) ) {
-                    require_once $fsStartPath;
+                if ( SSB_HAS_PRO ) {
+                    require_once dirname( __FILE__ ) . '/freemius/start.php';
                 } else {
-                    if ( SSB_HAS_FREE && file_exists( $bSDKInitPath ) ) {
-                        require_once $bSDKInitPath;
-                    }
+                    require_once dirname( __FILE__ ) . '/freemius-lite/start.php';
                 }
                 $ssbConfig = [
                     'id'                  => '18628',
@@ -58,11 +53,11 @@ if ( function_exists( 'ss_fs' ) ) {
                     ),
                     'menu'                => array(
                         'slug'       => 'edit.php?post_type=services_section',
-                        'first-path' => 'edit.php?post_type=services_section&page=ssb_demo_page',
+                        'first-path' => 'edit.php?post_type=services_section&page=ssb_demo_page#/dashboard',
                         'support'    => false,
                     ),
                 ];
-                $ss_fs = ( SSB_HAS_PRO && file_exists( $fsStartPath ) ? fs_dynamic_init( $ssbConfig ) : fs_lite_dynamic_init( $ssbConfig ) );
+                $ss_fs = ( SSB_HAS_PRO ? fs_dynamic_init( $ssbConfig ) : fs_lite_dynamic_init( $ssbConfig ) );
             }
             return $ss_fs;
         }
@@ -80,7 +75,6 @@ if ( function_exists( 'ss_fs' ) ) {
                 add_action( 'init', [$this, 'onInit'] );
                 add_action( 'enqueue_block_assets', [$this, 'ssb_enqueue_block_assets'] );
                 add_action( 'admin_enqueue_scripts', [$this, 'ssb_admin_enqueue_script'] );
-                add_action( 'init', [$this, 'ssb_register_post_type'] );
                 add_shortcode( 'services_section', [$this, 'ssb_shortcode'] );
                 add_filter( 'manage_services_section_posts_columns', [$this, 'ssb_ManageColumns'], 10 );
                 add_action(
@@ -100,6 +94,23 @@ if ( function_exists( 'ss_fs' ) ) {
                 register_block_type( __DIR__ . '/build/services' );
                 register_block_type( __DIR__ . '/build/service' );
                 wp_deregister_script( 'services-section-service-editor-script' );
+                register_post_type( 'services_section', [
+                    'label'              => 'Services Section',
+                    'labels'             => [
+                        'add_new'      => 'Add New',
+                        'add_new_item' => 'Add New Service',
+                        'edit_item'    => 'Edit Service',
+                        'not_found'    => 'There was no Service please add one',
+                    ],
+                    'show_in_rest'       => true,
+                    'public'             => true,
+                    'publicly_queryable' => false,
+                    'menu_icon'          => 'dashicons-portfolio',
+                    'item_published'     => 'Services Section Published',
+                    'item_updated'       => 'Services Section Updated',
+                    'template'           => [['services-section/services']],
+                    'template_lock'      => 'all',
+                ] );
             }
 
             function ssb_enqueue_block_assets() {
@@ -184,26 +195,6 @@ if ( function_exists( 'ss_fs' ) ) {
                         'nonce' => wp_create_nonce( 'wp_ajax' ),
                     ] ),
                     'sanitize_callback' => 'sanitize_text_field',
-                ] );
-            }
-
-            function ssb_register_post_type() {
-                register_post_type( 'services_section', [
-                    'label'              => 'Services Section',
-                    'labels'             => [
-                        'add_new'      => 'Add New',
-                        'add_new_item' => 'Add New Service',
-                        'edit_item'    => 'Edit Service',
-                        'not_found'    => 'There was no Service please add one',
-                    ],
-                    'show_in_rest'       => true,
-                    'public'             => true,
-                    'publicly_queryable' => false,
-                    'menu_icon'          => 'dashicons-portfolio',
-                    'item_published'     => 'Services Section Published',
-                    'item_updated'       => 'Services Section Updated',
-                    'template'           => [['services-section/services']],
-                    'template_lock'      => 'all',
                 ] );
             }
 
@@ -340,7 +331,6 @@ if ( function_exists( 'ss_fs' ) ) {
                 ?>
 								</div>
 						</div>
-					</div>
 				</div>
 	
 				<?php 

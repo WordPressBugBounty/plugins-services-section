@@ -2,7 +2,7 @@
   "apiVersion": 2,
   "name": "services-section/services",
   "title": "Services Section",
-  "description": "Services section for web page.",
+  "description": "Display your business services in a clean, responsive, and customizable section.",
   "category": "widgets",
   "keywords": [
     "our services",

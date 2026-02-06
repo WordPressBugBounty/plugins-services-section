@@ -1,10 +1,10 @@
-=== Services Section Block - Showcase services in a professional way. ===
-Contributors: bplugins, abuhayat, charlescormier,shamim10, freemius
+=== Services Section Block – Showcase Service Details in Grid or Columns ===
+Contributors: bplugins, abuhayat, freemius, shamim10
 Donate link: https://www.buymeacoffee.com/abuhayat
 Tags: block, our service, services section, services template, service card
 Requires at least: 6.5+
 Tested up to: 6.8.2
-Stable tag: 1.3.8
+Stable tag: 1.4.2
 Requires PHP: 7.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -17,15 +17,10 @@ Professionally showcase your services. This plugin adds a new block in the Block
 
 It is very effective in presenting your services nicely. There are many options that you can use to decorate your service section using any color you like.
 
-
-**[Demos](https://bblockswp.com/demo/services-section/)** | **[Get Pro](https://checkout.freemius.com/plugin/18628/plan/30791)**
-
-
 = Features =
 - **Icon Library**: There is an icon library from which you can select the icon of your choice, or if that icon is not available in the library, you can upload any images in PNG, JPEG, or JPG format and set it as a service icon.
 - **Built-in Templates**: We have added several templates that you can use whenever you want to present your services.
 - **Customize elements**: Apply custom typography to the title and description
-
 
 = Pro Features =
 - **Advanced Layout Variations**: Unlock exclusive layouts like Layout 2 to Layout 8 with unique styles and structures.
@@ -40,6 +35,9 @@ It is very effective in presenting your services nicely. There are many options 
 - **Hover Opacity**: Set the transparency when hovering over the circle.
 - **Radius**: Control the corner roundness of the box.
 - **Border**: Customize the border style, width, and color.
+
+
+**[Get Pro Version](https://bplugins.com/products/services-section/pricing)**
 
 
 = How to use =
@@ -118,20 +116,30 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 
 == Screenshots ==
 
-1. Default Layout
-2. Layout 1
-3. Layout 2
-4. Layout 3
-5. Layout 4
-6. Layout 5
-7. Layout 6
-8. Layout 7
-9. Layout 8
-10. Add Block
-11. All Settings
-
+1. Add Block
+2. Layout, Items & Elements Settings
+3. Service Configuration
+4. Default Layout
+5. Layout 1
+6. Layout 2
+7. Layout 3
+8. Layout 4
+9. Layout 5
+10. Layout 6
+11. Layout 7
+12. Layout 8
+13. ShortCode
 
 == Changelog ==
+
+= 1.4.2 - 24 Jan, 26 =
+* Improved section title formatting in dashboard
+
+= 1.4.1 - 04 Nov, 25 =
+* update sdk 
+
+= 1.4.0 - 15 October, 25 =
+* added modern dashboard and layout switch in toolbar 
 
 = 1.3.8 - 28 July 25 =
 * updated admin dashboard page

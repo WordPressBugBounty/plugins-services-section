@@ -24,7 +24,7 @@ class Enqueue {
             wp_enqueue_style( 'admin-post-css', SSB_DIR_URL . 'build/admin-post.css', [], SSB_VERSION );
 
             if ($screen === "services_section_page_ssb_demo_page") {
-                wp_enqueue_script( 'bpl-admin-dashboard-js', SSB_DIR_URL . 'build/admin-dashboard.js', [ 'react', 'react-dom' ], SSB_VERSION, true );
+                wp_enqueue_script( 'bpl-admin-dashboard-js', SSB_DIR_URL . 'build/admin-dashboard.js', [ 'react', 'react-dom', 'wp-util' ], SSB_VERSION, true );
                 wp_enqueue_style( 'bpl-admin-dashboard-css', SSB_DIR_URL . 'build/admin-dashboard.css', [], SSB_VERSION );
             }
 

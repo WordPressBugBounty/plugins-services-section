@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Services Section - Block
  * Description: Use Services Section Block to provide services of your business to clients with customizable settings.
- * Version: 1.4.2
+ * Version: 1.4.3
  * Author: bPlugins
  * Author URI: https://bplugins.com
  * License: GPLv3
@@ -16,7 +16,7 @@ if ( !defined( 'ABSPATH' ) ) {
 if ( function_exists( 'ss_fs' ) ) {
     ss_fs()->set_basename( false, __FILE__ );
 } else {
-    define( 'SSB_VERSION', ( isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '1.4.2' ) );
+    define( 'SSB_VERSION', ( isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '1.4.3' ) );
     define( 'SSB_DIR_URL', plugin_dir_url( __FILE__ ) );
     define( 'SSB_DIR_PATH', plugin_dir_path( __FILE__ ) );
     define( 'SSB_HAS_FRMS', file_exists( dirname( __FILE__ ) . '/freemius/start.php' ) );
@@ -58,6 +58,14 @@ if ( function_exists( 'ss_fs' ) ) {
         ss_fs();
         do_action( 'ss_fs_loaded' );
     }
+    if ( SSB_HAS_FRMS ) {
+        require_once SSB_DIR_PATH . 'includes/LicenseActivation.php';
+    }
     require_once SSB_DIR_PATH . 'includes/utility/functions.php';
     require_once SSB_DIR_PATH . 'includes/ssbPlugin/plugin.php';
+    add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), function ( $links ) {
+        $help_link = '<a href="' . admin_url( 'edit.php?post_type=services_section&page=ssb_demo_page' ) . '" style="color:#FF7A00;font-weight:bold;">Help & Demos</a>';
+        $links[] = $help_link;
+        return $links;
+    } );
 }

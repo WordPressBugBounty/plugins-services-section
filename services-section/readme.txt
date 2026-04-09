@@ -4,7 +4,7 @@ Donate link: https://www.buymeacoffee.com/abuhayat
 Tags: block, our service, services section, services template, service card
 Requires at least: 6.5+
 Tested up to: 6.9.1
-Stable tag: 1.4.3
+Stable tag: 1.4.4
 Requires PHP: 7.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -131,6 +131,10 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 13. ShortCode
 
 == Changelog ==
+
+= 1.4.4 - 09 April, 26 =
+* **Fixed:** Class naming conflict and namespace resolution issue in LicenseActivation.
+* **Updated:** Freemius SDK to latest version.
 
 = 1.4.3 - 28 Feb, 26 =
 * Update brand new dashboard with license activation support

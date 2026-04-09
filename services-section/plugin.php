@@ -2,8 +2,9 @@
 
 /**
  * Plugin Name: Services Section - Block
+ * Plugin URI:  https://bplugins.com/products/services-section/
  * Description: Use Services Section Block to provide services of your business to clients with customizable settings.
- * Version: 1.4.3
+ * Version: 1.4.4
  * Author: bPlugins
  * Author URI: https://bplugins.com
  * License: GPLv3
@@ -16,18 +17,18 @@ if ( !defined( 'ABSPATH' ) ) {
 if ( function_exists( 'ss_fs' ) ) {
     ss_fs()->set_basename( false, __FILE__ );
 } else {
-    define( 'SSB_VERSION', ( isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '1.4.3' ) );
+    define( 'SSB_VERSION', ( isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '1.4.4' ) );
     define( 'SSB_DIR_URL', plugin_dir_url( __FILE__ ) );
     define( 'SSB_DIR_PATH', plugin_dir_path( __FILE__ ) );
-    define( 'SSB_HAS_FRMS', file_exists( dirname( __FILE__ ) . '/freemius/start.php' ) );
+    define( 'SSB_HAS_FRMS', file_exists( dirname( __FILE__ ) . '/vendor/freemius/start.php' ) );
     if ( !function_exists( 'ss_fs' ) ) {
         function ss_fs() {
             global $ss_fs;
             if ( !isset( $ss_fs ) ) {
                 if ( SSB_HAS_FRMS ) {
-                    require_once SSB_DIR_PATH . '/freemius/start.php';
+                    require_once SSB_DIR_PATH . '/vendor/freemius/start.php';
                 } else {
-                    require_once SSB_DIR_PATH . '/freemius-lite/start.php';
+                    require_once SSB_DIR_PATH . '/vendor/freemius-lite/start.php';
                 }
                 $ssbConfig = [
                     'id'                  => '18628',

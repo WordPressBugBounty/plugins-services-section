@@ -9,7 +9,7 @@ Requires PHP: 7.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Deliver your services beautifully to clients with Services Section Block.
+Deliver your services beautifully to clients with Services Section Block
 
 == Description ==
 

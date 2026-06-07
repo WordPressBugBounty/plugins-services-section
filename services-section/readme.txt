@@ -1,5 +1,5 @@
 === Services Section Block – Showcase Service Details in Grid or Columns ===
-Contributors: bplugins, abuhayat, freemius, shamim10
+Contributors: bplugins, abuhayat, freemius, shihabshamim
 Donate link: https://www.buymeacoffee.com/abuhayat
 Tags: block, our service, services section, services template, service card
 Requires at least: 6.5+
@@ -9,11 +9,13 @@ Requires PHP: 7.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Deliver your services beautifully to clients with Services Section Block
+Deliver your services beautifully to clients with Services Section Block .
 
 == Description ==
 
 Professionally showcase your services. This plugin adds a new block in the Block Editor by which you can create a professional-looking service section or OUR SERVICE section.
+
+**[Service Section](https://bplugins.com/products/services-section/)** | **[Demos](https://bplugins.com/products/services-section/#demos)** | **[pricing](https://bplugins.com/products/services-section/pricing)**
 
 It is very effective in presenting your services nicely. There are many options that you can use to decorate your service section using any color you like.
 

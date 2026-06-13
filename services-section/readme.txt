@@ -4,12 +4,12 @@ Donate link: https://www.buymeacoffee.com/abuhayat
 Tags: block, our service, services section, services template, service card
 Requires at least: 6.5+
 Tested up to: 6.9.1
-Stable tag: 1.4.4
+Stable tag: 1.4.5
 Requires PHP: 7.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Deliver your services beautifully to clients with Services Section Block .
+Deliver your services beautifully to clients with Services Section Block
 
 == Description ==
 

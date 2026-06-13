@@ -4,7 +4,7 @@
  * Plugin Name: Services Section - Block
  * Plugin URI:  https://bplugins.com/products/services-section/
  * Description: Use Services Section Block to provide services of your business to clients with customizable settings.
- * Version: 1.4.4
+ * Version: 1.4.5
  * Author: bPlugins
  * Author URI: https://bplugins.com
  * License: GPLv3
@@ -17,7 +17,7 @@ if ( !defined( 'ABSPATH' ) ) {
 if ( function_exists( 'ss_fs' ) ) {
     ss_fs()->set_basename( false, __FILE__ );
 } else {
-    define( 'SSB_VERSION', ( isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '1.4.4' ) );
+    define( 'SSB_VERSION', ( isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '1.4.5' ) );
     define( 'SSB_DIR_URL', plugin_dir_url( __FILE__ ) );
     define( 'SSB_DIR_PATH', plugin_dir_path( __FILE__ ) );
     define( 'SSB_HAS_FRMS', file_exists( dirname( __FILE__ ) . '/vendor/freemius/start.php' ) );
@@ -36,7 +36,7 @@ if ( function_exists( 'ss_fs' ) ) {
                     'premium_slug'        => 'services-section-pro',
                     'type'                => 'plugin',
                     'public_key'          => 'pk_e9793d569da544eb6078cf6a751f1',
-                    'is_premium'          => true,
+                    'is_premium'          => false,
                     'premium_suffix'      => 'Pro',
                     'has_premium_version' => true,
                     'has_addons'          => false,

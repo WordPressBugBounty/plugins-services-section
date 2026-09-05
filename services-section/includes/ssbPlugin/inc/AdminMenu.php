@@ -26,7 +26,12 @@ class AdminMenu  {
                     'version' => SSB_VERSION,
                     'isPremium' => ssbIsPremium(),
                     'hasPro' => SSB_HAS_FRMS,
-                    'licenseActiveNonce' => wp_create_nonce( 'bPlLicenseActivation' )
+                    'licenseActiveNonce' => wp_create_nonce( 'bPlLicenseActivation' ),
+                    'action' => 'ssbGetBlocks',
+                    'nonce' => wp_create_nonce( 'ssb_admin_nonce' ),
+                    'adminUrl' => admin_url(),
+                    'deleteDataOnUninstall' => (bool) get_option( 'ssbDeleteDataOnUninstall', false ),
+                    'uninstallNonce' => wp_create_nonce( 'ssb_save_uninstall_option' )
                 ] ) ); ?>'
             ></div>
         <?php

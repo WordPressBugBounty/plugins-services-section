@@ -1,0 +1,347 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "services-section/feature-spotlight",
+  "version": "1.0.0",
+  "title": "Feature Spotlight",
+  "category": "services-section",
+  "description": "Dark premium feature tiles with gradient icons, corner glow, and hover arrow.",
+  "keywords": [
+    "Feature Spotlight",
+    "feature",
+    "tile",
+    "spotlight",
+    "glow",
+    "dark",
+    "services"
+  ],
+  "textdomain": "services-section",
+  "attributes": {
+    "alignment": {
+      "type": "string",
+      "default": "left"
+    },
+    "align": {
+      "type": "string",
+      "default": "full"
+    },
+    "options": {
+      "type": "object",
+      "default": {
+        "isGlow": true,
+        "isIcon": true,
+        "isTitle": true,
+        "isDescription": true,
+        "isButton": true,
+        "isBtnIcon": true,
+        "titleTag": "h3",
+        "linkOn": "both",
+        "openInNewTab": false,
+        "btnIcon": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'><path d='M5 12h14M12 5l7 7-7 7'/></svg>",
+        "hideOn": {
+          "desktop": false,
+          "tablet": false,
+          "mobile": false
+        }
+      }
+    },
+    "cards": {
+      "type": "array",
+      "default": [
+        {
+          "icon": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'><path d='M13 2L3 14h9l-1 8 10-12h-9l1-8z'/></svg>",
+          "title": "Blazing Fast Core",
+          "description": "A ground-up rewrite delivers sub-second responses even under heavy, sustained load.",
+          "btnText": "Get started",
+          "link": "#"
+        },
+        {
+          "icon": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'><path d='M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z'/><path d='M9 12l2 2 4-4'/></svg>",
+          "title": "Fortified Security",
+          "description": "Enterprise-grade protection with continuous audits, encryption and threat detection.",
+          "btnText": "Get started",
+          "link": "#"
+        }
+      ]
+    },
+    "styles": {
+      "type": "object",
+      "default": {
+        "transition": 300,
+        "easing": "ease",
+        "columns": {
+          "desktop": 2,
+          "tablet": 2,
+          "mobile": 1
+        },
+        "columnGap": {
+          "desktop": 24,
+          "tablet": 24,
+          "mobile": 24
+        },
+        "rowGap": {
+          "desktop": 24,
+          "tablet": 24,
+          "mobile": 24
+        },
+        "maxWidth": {
+          "desktop": "100%",
+          "tablet": "100%",
+          "mobile": "100%"
+        },
+        "bg": {
+          "type": "solid",
+          "color": "#0f1117"
+        },
+        "padding": {
+          "desktop": {
+            "top": "100px",
+            "right": "24px",
+            "bottom": "100px",
+            "left": "24px"
+          },
+          "tablet": {
+            "top": "100px",
+            "right": "24px",
+            "bottom": "100px",
+            "left": "24px"
+          },
+          "mobile": {
+            "top": "64px",
+            "right": "20px",
+            "bottom": "64px",
+            "left": "20px"
+          }
+        },
+        "margin": {
+          "desktop": {
+            "top": "0px",
+            "right": "0px",
+            "bottom": "0px",
+            "left": "0px"
+          },
+          "tablet": {
+            "top": "0px",
+            "right": "0px",
+            "bottom": "0px",
+            "left": "0px"
+          },
+          "mobile": {
+            "top": "0px",
+            "right": "0px",
+            "bottom": "0px",
+            "left": "0px"
+          }
+        },
+        "card": {
+          "bg": {
+            "type": "solid",
+            "color": "#161923"
+          },
+          "hoverBg": {},
+          "maxWidth": "",
+          "minHeight": "",
+          "padding": {
+            "top": "40px",
+            "right": "36px",
+            "bottom": "40px",
+            "left": "36px"
+          },
+          "radius": {
+            "top": "22px",
+            "right": "22px",
+            "bottom": "22px",
+            "left": "22px"
+          },
+          "border": {
+            "width": "1px",
+            "style": "solid",
+            "color": "#232838"
+          },
+          "hoverBorderColor": "#fb923c",
+          "shadow": [],
+          "hoverShadow": [],
+          "hoverTranslateY": -6
+        },
+        "glow": {
+          "position": "top-right",
+          "size": 200,
+          "offset": 80,
+          "color": "rgba(251, 146, 60, 0.35)",
+          "spread": 65,
+          "radius": {
+            "top": "50%",
+            "right": "50%",
+            "bottom": "50%",
+            "left": "50%"
+          },
+          "scale": 0.6,
+          "hoverScale": 1.15,
+          "transition": 450
+        },
+        "icon": {
+          "size": 60,
+          "iconSize": 30,
+          "color": "#ffffff",
+          "hoverColor": "",
+          "bg": {
+            "type": "gradient",
+            "gradient": "linear-gradient(135deg,#fb923c,#f97316)"
+          },
+          "hoverBg": {},
+          "padding": {
+            "top": "0px",
+            "right": "0px",
+            "bottom": "0px",
+            "left": "0px"
+          },
+          "radius": {
+            "top": "16px",
+            "right": "16px",
+            "bottom": "16px",
+            "left": "16px"
+          },
+          "border": {
+            "width": "0px",
+            "style": "solid",
+            "color": "#fb923c"
+          },
+          "hoverBorderColor": "",
+          "margin": {
+            "top": "0px",
+            "right": "0px",
+            "bottom": "22px",
+            "left": "0px"
+          },
+          "shadow": [],
+          "hoverRotate": 0,
+          "hoverScale": 1
+        },
+        "title": {
+          "color": "#f8fafc",
+          "hoverColor": "",
+          "margin": {
+            "top": "0px",
+            "right": "0px",
+            "bottom": "12px",
+            "left": "0px"
+          },
+          "typo": {
+            "fontFamily": "",
+            "fontCategory": "",
+            "fontWeight": 700,
+            "fontVariant": "700",
+            "isUploadFont": false,
+            "fontSize": {
+              "desktop": 22,
+              "tablet": 22,
+              "mobile": 22
+            },
+            "fontStyle": "normal",
+            "textTransform": "none",
+            "textDecoration": "none",
+            "lineHeight": 1.6,
+            "letterSpace": ""
+          }
+        },
+        "description": {
+          "color": "#94a3b8",
+          "margin": {
+            "top": "0px",
+            "right": "0px",
+            "bottom": "24px",
+            "left": "0px"
+          },
+          "typo": {
+            "fontFamily": "",
+            "fontCategory": "",
+            "fontWeight": "",
+            "fontVariant": "",
+            "isUploadFont": false,
+            "fontSize": {
+              "desktop": 15,
+              "tablet": 15,
+              "mobile": 15
+            },
+            "fontStyle": "normal",
+            "textTransform": "none",
+            "textDecoration": "none",
+            "lineHeight": 1.6,
+            "letterSpace": ""
+          }
+        },
+        "button": {
+          "color": "#0f1117",
+          "hoverColor": "",
+          "bg": {
+            "type": "solid",
+            "color": "#fb923c"
+          },
+          "hoverBg": {
+            "type": "solid",
+            "color": "#fdba74"
+          },
+          "iconSize": 16,
+          "iconGap": 8,
+          "hoverIconGap": 13,
+          "padding": {
+            "top": "12px",
+            "right": "22px",
+            "bottom": "12px",
+            "left": "22px"
+          },
+          "radius": {
+            "top": "10px",
+            "right": "10px",
+            "bottom": "10px",
+            "left": "10px"
+          },
+          "border": {
+            "width": "0px",
+            "style": "solid",
+            "color": "#fb923c"
+          },
+          "hoverBorderColor": "",
+          "margin": {
+            "top": "0px",
+            "right": "0px",
+            "bottom": "0px",
+            "left": "0px"
+          },
+          "typo": {
+            "fontFamily": "",
+            "fontCategory": "",
+            "fontWeight": 700,
+            "fontVariant": "700",
+            "isUploadFont": false,
+            "fontSize": {
+              "desktop": 14,
+              "tablet": 14,
+              "mobile": 14
+            },
+            "fontStyle": "normal",
+            "textTransform": "none",
+            "textDecoration": "none",
+            "lineHeight": 1.6,
+            "letterSpace": ""
+          }
+        }
+      }
+    }
+  },
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ],
+    "html": false
+  },
+  "example": {
+    "attributes": {}
+  },
+  "editorScript": "file:../index.js",
+  "editorStyle": "file:../index.css",
+  "style": "file:./view.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}

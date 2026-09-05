@@ -1,0 +1,213 @@
+{
+  "apiVersion": 2,
+  "name": "services-section/service",
+  "title": "Service",
+  "description": "Service item for services.",
+  "parent": [
+    "services-section/services"
+  ],
+  "category": "services-section",
+  "keywords": [
+    "our service",
+    "service item",
+    "service card"
+  ],
+  "textdomain": "services-section",
+  "attributes": {
+    "align": {
+      "type": "string",
+      "default": ""
+    },
+    "background": {
+      "type": "object",
+      "default": {
+        "color": "#0000"
+      }
+    },
+    "hoverBG": {
+      "type": "object",
+      "default": {
+        "type": "image",
+        "image": {
+          "url": "https://i.imgur.com/i6qCSdM.png"
+        },
+        "overlayColor": "#0000",
+        "position": "bottom left",
+        "size": "auto",
+        "repeat": "no-repeat"
+      }
+    },
+    "afterBackground": {
+      "type": "object",
+      "default": {
+        "color": "#37473A"
+      }
+    },
+    "animationDirection": {
+      "type": "string",
+      "default": "left"
+    },
+    "contentBox": {
+      "type": "object",
+      "default": {
+        "bg": "#6A3434",
+        "padding": {
+          "side": 4,
+          "top": "0px",
+          "right": "20px",
+          "bottom": "20px",
+          "left": "20px"
+        },
+        "border": {
+          "side": "top",
+          "color": "#fa5b0f",
+          "width": "15px",
+          "style": "solid",
+          "radius": ""
+        }
+      }
+    },
+    "cardData": {
+      "type": "object",
+      "default": {
+        "bg": "#282828",
+        "radius": "10px"
+      }
+    },
+    "isIcon": {
+      "type": "boolean",
+      "default": true
+    },
+    "isUpIcon": {
+      "type": "boolean",
+      "default": false
+    },
+    "icon": {
+      "type": "object",
+      "default": {
+        "class": "fa-brands fa-wordpress",
+        "fontSize": 70
+      }
+    },
+    "iconHovColor": {
+      "type": "string",
+      "default": "#000"
+    },
+    "iconBgColor": {
+      "type": "string",
+      "default": "#0000"
+    },
+    "iconBgHovColor": {
+      "type": "string",
+      "default": "#0000"
+    },
+    "upIcon": {
+      "type": "object",
+      "default": {
+        "id": null,
+        "url": "",
+        "alt": "",
+        "title": ""
+      }
+    },
+    "iconWidth": {
+      "type": "string",
+      "default": "70px"
+    },
+    "iconBorder": {
+      "type": "object",
+      "default": {}
+    },
+    "isTitle": {
+      "type": "boolean",
+      "default": true
+    },
+    "title": {
+      "type": "string",
+      "selector": ".ssbService h3.title",
+      "default": "Service title"
+    },
+    "titleColor": {
+      "type": "string",
+      "default": "#222"
+    },
+    "titleHovColor": {
+      "type": "string",
+      "default": "#222"
+    },
+    "isDesc": {
+      "type": "boolean",
+      "default": true
+    },
+    "desc": {
+      "type": "string",
+      "selector": ".ssbService h3.description",
+      "default": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, fuga."
+    },
+    "descColor": {
+      "type": "string",
+      "default": "#333"
+    },
+    "descHovColor": {
+      "type": "string",
+      "default": "#333"
+    },
+    "circleBefore": {
+      "type": "object",
+      "default": {
+        "width": "150px",
+        "height": "150px"
+      },
+      "bg": "#ff4500",
+      "opacity": 0.5,
+      "hovOpacity": 1,
+      "border": {
+        "color": "#504f93",
+        "width": "6px",
+        "style": "solid",
+        "radius": "50%"
+      }
+    },
+    "isLink": {
+      "type": "boolean",
+      "default": true
+    },
+    "link": {
+      "type": "string",
+      "default": "#"
+    },
+    "linkIn": {
+      "type": "string",
+      "default": "button"
+    },
+    "isOpenInNewTab": {
+      "type": "boolean",
+      "default": false
+    },
+    "linkIconColor": {
+      "type": "string",
+      "default": "#fff"
+    },
+    "linkBGColor": {
+      "type": "string",
+      "default": "#d2d2d2"
+    },
+    "linkBGHovColor": {
+      "type": "string",
+      "default": "#4527a4"
+    }
+  },
+  "supports": {
+    "align": false,
+    "reusable": false,
+    "html": false
+  },
+  "example": {
+    "attributes": {
+      "preview": true
+    }
+  },
+  "editorScript": "file:../services/index.js",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}

@@ -1,0 +1,318 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "services-section/minimal-features",
+  "version": "1.0.0",
+  "title": "Minimal Features",
+  "category": "services-section",
+  "description": "Minimal feature grid with top-left icons, accent bar, and a clean, refined palette.",
+  "keywords": [
+    "Minimal Features",
+    "services",
+    "features",
+    "cards",
+    "icon"
+  ],
+  "textdomain": "services-section",
+  "attributes": {
+    "alignment": {
+      "type": "string",
+      "default": "left"
+    },
+    "align": {
+      "type": "string",
+      "default": "full"
+    },
+    "options": {
+      "type": "object",
+      "default": {
+        "isIcon": true,
+        "isTitle": true,
+        "isDescription": true,
+        "isAccent": true,
+        "isButton": false,
+        "titleTag": "h3",
+        "clickOnCard": false,
+        "openInNewTab": false
+      }
+    },
+    "cards": {
+      "type": "array",
+      "default": [
+        {
+          "icon": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M13 2L3 14h9l-1 8 10-12h-9l1-8z'/></svg>",
+          "title": "Lightning Performance",
+          "description": "Optimized infrastructure that keeps your applications fast, reliable and always available.",
+          "btnText": "Learn More",
+          "link": "#"
+        },
+        {
+          "icon": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z'/></svg>",
+          "title": "Enterprise Security",
+          "description": "Bank-grade encryption and continuous monitoring protect your data around the clock.",
+          "btnText": "Learn More",
+          "link": "#"
+        },
+        {
+          "icon": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M3 3v18h18'/><path d='M7 14l4-4 3 3 5-6'/></svg>",
+          "title": "Growth Analytics",
+          "description": "Actionable insights and dashboards that help you make smarter business decisions.",
+          "btnText": "Learn More",
+          "link": "#"
+        }
+      ]
+    },
+    "styles": {
+      "type": "object",
+      "default": {
+        "transition": 350,
+        "columns": {
+          "desktop": 3,
+          "tablet": 2,
+          "mobile": 1
+        },
+        "columnGap": {
+          "desktop": 48,
+          "tablet": 48,
+          "mobile": 40
+        },
+        "rowGap": {
+          "desktop": 56,
+          "tablet": 56,
+          "mobile": 40
+        },
+        "maxWidth": "100%",
+        "bg": {
+          "type": "solid",
+          "color": "#ffffff"
+        },
+        "padding": {
+          "desktop": {
+            "top": "80px",
+            "right": "24px",
+            "bottom": "80px",
+            "left": "24px"
+          },
+          "tablet": {
+            "top": "80px",
+            "right": "24px",
+            "bottom": "80px",
+            "left": "24px"
+          },
+          "mobile": {
+            "top": "56px",
+            "right": "20px",
+            "bottom": "56px",
+            "left": "20px"
+          }
+        },
+        "margin": {
+          "desktop": {
+            "top": "0px",
+            "right": "0px",
+            "bottom": "0px",
+            "left": "0px"
+          },
+          "tablet": {
+            "top": "0px",
+            "right": "0px",
+            "bottom": "0px",
+            "left": "0px"
+          },
+          "mobile": {
+            "top": "0px",
+            "right": "0px",
+            "bottom": "0px",
+            "left": "0px"
+          }
+        },
+        "item": {
+          "bg": {},
+          "hoverBg": {},
+          "padding": {
+            "top": "8px",
+            "right": "0px",
+            "bottom": "0px",
+            "left": "0px"
+          },
+          "radius": {
+            "top": "0px",
+            "right": "0px",
+            "bottom": "0px",
+            "left": "0px"
+          },
+          "border": {
+            "width": "0px",
+            "style": "none",
+            "color": "#e5e7eb"
+          },
+          "shadow": [],
+          "hoverShadow": [],
+          "hoverTranslateY": 0
+        },
+        "icon": {
+          "size": 48,
+          "color": "#4f46e5",
+          "hoverColor": "",
+          "bg": {},
+          "padding": {
+            "top": "0px",
+            "right": "0px",
+            "bottom": "0px",
+            "left": "0px"
+          },
+          "radius": {
+            "top": "0px",
+            "right": "0px",
+            "bottom": "0px",
+            "left": "0px"
+          },
+          "margin": {
+            "top": "0px",
+            "right": "0px",
+            "bottom": "22px",
+            "left": "0px"
+          },
+          "hoverTranslateY": -4
+        },
+        "title": {
+          "color": "#1a1a2e",
+          "hoverColor": "",
+          "margin": {
+            "top": "0px",
+            "right": "0px",
+            "bottom": "12px",
+            "left": "0px"
+          },
+          "typo": {
+            "fontFamily": "",
+            "fontCategory": "",
+            "fontWeight": 600,
+            "fontVariant": "600",
+            "isUploadFont": false,
+            "fontSize": {
+              "desktop": 20,
+              "tablet": 20,
+              "mobile": 20
+            },
+            "fontStyle": "normal",
+            "textTransform": "none",
+            "textDecoration": "none",
+            "lineHeight": 1.6,
+            "letterSpace": "-0.01em"
+          }
+        },
+        "description": {
+          "color": "#6b7280",
+          "margin": {
+            "top": "0px",
+            "right": "0px",
+            "bottom": "0px",
+            "left": "0px"
+          },
+          "typo": {
+            "fontFamily": "",
+            "fontCategory": "",
+            "fontWeight": "",
+            "fontVariant": "",
+            "isUploadFont": false,
+            "fontSize": {
+              "desktop": 15,
+              "tablet": 15,
+              "mobile": 15
+            },
+            "fontStyle": "normal",
+            "textTransform": "none",
+            "textDecoration": "none",
+            "lineHeight": 1.6,
+            "letterSpace": ""
+          }
+        },
+        "accent": {
+          "width": "40px",
+          "hoverWidth": "72px",
+          "height": "2px",
+          "color": "#4f46e5",
+          "hoverColor": "",
+          "radius": {
+            "top": "0px",
+            "right": "0px",
+            "bottom": "0px",
+            "left": "0px"
+          },
+          "margin": {
+            "top": "22px",
+            "right": "0px",
+            "bottom": "0px",
+            "left": "0px"
+          }
+        },
+        "button": {
+          "color": "#4f46e5",
+          "hoverColor": "#ffffff",
+          "bg": {},
+          "hoverBg": {
+            "type": "solid",
+            "color": "#4f46e5"
+          },
+          "padding": {
+            "top": "8px",
+            "right": "18px",
+            "bottom": "8px",
+            "left": "18px"
+          },
+          "radius": {
+            "top": "6px",
+            "right": "6px",
+            "bottom": "6px",
+            "left": "6px"
+          },
+          "border": {
+            "width": "1px",
+            "style": "solid",
+            "color": "#4f46e5"
+          },
+          "hoverBorderColor": "#4f46e5",
+          "margin": {
+            "top": "20px",
+            "right": "0px",
+            "bottom": "0px",
+            "left": "0px"
+          },
+          "typo": {
+            "fontFamily": "",
+            "fontCategory": "",
+            "fontWeight": 600,
+            "fontVariant": "600",
+            "isUploadFont": false,
+            "fontSize": {
+              "desktop": 14,
+              "tablet": 14,
+              "mobile": 14
+            },
+            "fontStyle": "normal",
+            "textTransform": "none",
+            "textDecoration": "none",
+            "lineHeight": 1.4,
+            "letterSpace": ""
+          }
+        }
+      }
+    }
+  },
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ],
+    "html": false
+  },
+  "example": {
+    "attributes": {}
+  },
+  "editorScript": "file:../index.js",
+  "editorStyle": "file:../index.css",
+  "style": "file:./view.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}

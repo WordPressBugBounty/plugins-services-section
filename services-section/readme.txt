@@ -9,7 +9,7 @@ Donate link: https://www.buymeacoffee.com/abuhayat
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Services section block for Gutenberg – build a professional "Our Services" section with icons, templates, layouts, and custom colors. No code needed.
+Services section block for Gutenberg – build a professional "Our Services" section with icons, templates, layouts, and custom colors. No code needed .
 
 == Description ==
 

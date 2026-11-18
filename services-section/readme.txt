@@ -2,14 +2,14 @@
 Contributors: bplugins, abuhayat, freemius, shihabshamim
 Tags: block, our service, services section, services template, service card
 Tested up to: 7.1
-Stable tag: 1.4.6
+Stable tag: 1.4.7
 Requires PHP: 7.4
 Requires at least: 6.5
 Donate link: https://www.buymeacoffee.com/abuhayat
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Services section block for Gutenberg – build a professional "Our Services" section with icons, templates, layouts, and custom colors. No code needed .
+Services section block for Gutenberg – build a professional "Our Services" section with icons, templates, layouts, and custom colors. No code needed.
 
 == Description ==
 
@@ -155,6 +155,9 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 
 
 == Changelog ==
+
+= 1.4.7 - 18 November, 26 =
+* **Update:** Added Black Friday & Cyber Monday (BFCM) promotional banner and plugin action link.
 
 = 1.4.6 - 05 September, 26 =
 * **New:** Added 8 New Blocks.

@@ -4,7 +4,7 @@
  * Plugin Name: Services Section - Block
  * Plugin URI:  https://bplugins.com/products/services-section/
  * Description: Use Services Section Block to provide services of your business to clients with customizable settings.
- * Version: 1.4.6
+ * Version: 1.4.7
  * Author: bPlugins
  * Author URI: https://bplugins.com
  * License: GPLv3
@@ -17,7 +17,7 @@ if ( !defined( 'ABSPATH' ) ) {
 if ( function_exists( 'ss_fs' ) ) {
     ss_fs()->set_basename( false, __FILE__ );
 } else {
-    define( 'SSB_VERSION', ( isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '1.4.6' ) );
+    define( 'SSB_VERSION', ( isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '1.4.7' ) );
     define( 'SSB_DIR_URL', plugin_dir_url( __FILE__ ) );
     define( 'SSB_DIR_PATH', plugin_dir_path( __FILE__ ) );
     define( 'SSB_HAS_FRMS', file_exists( dirname( __FILE__ ) . '/vendor/freemius/start.php' ) );
@@ -64,9 +64,32 @@ if ( function_exists( 'ss_fs' ) ) {
     }
     require_once SSB_DIR_PATH . 'includes/utility/functions.php';
     require_once SSB_DIR_PATH . 'includes/ssbPlugin/plugin.php';
+    require_once SSB_DIR_PATH . 'includes/class-services-section-promo-banner.php';
     add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), function ( $links ) {
         $help_link = '<a href="' . admin_url( 'edit.php?post_type=services_section&page=ssb_demo_page' ) . '" style="color:#FF7A00;font-weight:bold;">Help & Demos</a>';
         $links[] = $help_link;
         return $links;
     } );
+    if ( !function_exists( 'ssbPluginActionLinks' ) ) {
+        function ssbPluginActionLinks(  $links, $file  ) {
+            if ( plugin_basename( __FILE__ ) === $file && !(class_exists( 'SSB_PromoBanner' ) && SSB_PromoBanner::is_pro_active()) ) {
+                $goProLink = 'https://bplugins.com/products/services-section/pricing/?utm_source=admin&utm_medium=plugins&utm_campaign=bfcm2026';
+                $linkText = ( current_time( 'Y-m-d' ) > '2026-12-05' ? __( 'Upgrade to Pro', 'services-section' ) : __( 'Upgrade to Pro & Save Up to 45% This Black Friday!', 'services-section' ) );
+                $links['ssb-go-pro'] = sprintf(
+                    '<a href="%s" target="_blank" rel="noopener noreferrer" style="%s">%s</a>',
+                    esc_url( $goProLink ),
+                    'color:#d63638;font-weight:bold;',
+                    esc_html( $linkText )
+                );
+            }
+            return $links;
+        }
+
+    }
+    add_filter(
+        'plugin_action_links_' . plugin_basename( __FILE__ ),
+        'ssbPluginActionLinks',
+        10,
+        2
+    );
 }
